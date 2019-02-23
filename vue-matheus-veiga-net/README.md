@@ -1,4 +1,4 @@
-# vue-matheus-veiga-net
+# vue-matheus-veiga-net-2-0
 
 ## Project setup
 ```

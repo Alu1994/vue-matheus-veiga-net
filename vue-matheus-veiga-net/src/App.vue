@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <app-header />
+    <div id="nav" class="vue-menu-header">
+      <app-header></app-header>
     </div>
-    <router-view/>
+    <transition name="slide" mode="out-in">
+      <router-view class="vue-view-router"></router-view>
+    </transition>
   </div>
 </template>
 
@@ -27,7 +29,7 @@
     color: #2c3e50;
   }
   #nav {
-    padding: 30px;
+    padding: 0px;
   }
 
   #nav a {
@@ -37,5 +39,52 @@
 
   #nav a.router-link-exact-active {
     color: #42b983;
+  }
+
+  .vue-menu-header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    z-index: 10;
+    position: fixed;
+  }
+
+  .vue-view-router {
+    z-index:-1;
+    padding-top: 200px;
+  }
+  
+
+  .slide-enter-active {
+      animation: slide-in 200ms ease-out forwards;
+  }
+
+  .slide-enter-leave {
+      animation: slide-out 200ms ease-out forwards;
+  }
+
+  @keyframes slide-in {
+      from {
+          transform: translateY(-30px);
+          opacity: 0;
+      }
+      to {
+          transform: translateY(0);
+          opacity: 1;
+      }
+  }
+
+  @keyframes slide-out {
+      from {
+          transform: translateY(0);
+          opacity: 1;
+      }
+      to {
+          transform: translateY(-30px);
+          opacity: 0;
+      }
   }
 </style>
