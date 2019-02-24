@@ -3,7 +3,7 @@
         class="col-12"
         style="text-align: left;">
         <h3>
-            <img src="./../../assets/projects.png" alt="Experiências" title="Experiências">
+            <img src="./../../../assets/projects.png" alt="Experiências" title="Experiências">
             <span class="title">Projetos</span>
         </h3>
         <h4 class="title" style="font-size:18px;margin-top:20px;">

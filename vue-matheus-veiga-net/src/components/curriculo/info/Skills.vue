@@ -3,7 +3,7 @@
         class="col-12"
         style="text-align: left;">
         <h3>
-            <img src="./../../assets/skills.png" alt="Experiências" title="Experiências">
+            <img src="./../../../assets/skills.png" alt="Experiências" title="Experiências">
             <span class="title">Skills & Proficiência</span>
         </h3>
         <div class="container" v-for="skill in skillList">
