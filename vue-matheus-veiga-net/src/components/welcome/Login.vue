@@ -64,9 +64,10 @@
   .signin-form {
     width: 400px;
     margin: 30px auto;
-    border: 1px solid #eee;
+    border: 1px solid #343a40;
     box-shadow: 0 2px 3px #ccc;
     border-radius: 10px;
+    background-color: #FFFFFF;
   }
 
   .fields {

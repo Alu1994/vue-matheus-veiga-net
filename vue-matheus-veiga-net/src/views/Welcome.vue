@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="padding-top: 300px;">
         <transition name="slide" mode="out-in">
             <app-login v-if="auth"></app-login>
             <app-Welcome v-else></app-Welcome>

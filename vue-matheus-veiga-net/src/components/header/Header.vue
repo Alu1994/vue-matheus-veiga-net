@@ -16,7 +16,7 @@
           <router-link to="/Certificados" tag="li" class="nav-item">
             <a class="nav-link" style="color:#FFFFFF">Certificados</a>
           </router-link>
-          <router-link to="/Dados" tag="li" class="nav-item">
+          <router-link to="/Dados" tag="li" class="nav-item" v-if="auth">
             <a class="nav-link" style="color:#FFFFFF">Dados</a>
           </router-link>
         </ul>
