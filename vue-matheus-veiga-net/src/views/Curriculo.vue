@@ -3,15 +3,9 @@
     class="container">
     <div 
       class="row">
+      
       <div 
-        class="col-8">
-          <app-perfil-carreira class="resumeComponents"></app-perfil-carreira>
-          <app-experiencias class="resumeComponents"></app-experiencias>
-          <app-projetos class="resumeComponents"></app-projetos>
-          <app-skills class="resumeComponents"></app-skills>
-        </div>
-      <div 
-        class="col-4">
+        class="col-sm-4">
         <div class="profile-container-top">
           <app-profile-top></app-profile-top>
         </div>
@@ -19,6 +13,15 @@
           <app-profile-bottom></app-profile-bottom>
         </div>
       </div>
+      
+      <div 
+        class="col-sm-8">
+          <app-perfil-carreira class="resumeComponents"></app-perfil-carreira>
+          <app-experiencias class="resumeComponents"></app-experiencias>
+          <app-projetos class="resumeComponents"></app-projetos>
+          <app-skills class="resumeComponents"></app-skills>
+        </div>
+      
     </div>
   </div>
 </template>
@@ -57,7 +60,7 @@
     margin-bottom: 20px;
   }
 
-  .row .col-8 {
+  .row .col-sm-8 {
     background:#FFFFFF;
     min-height: 2500px;
     max-height: 8000px;
@@ -69,7 +72,7 @@
     color: #343a40;
   }
 
-  .row .col-4 {
+  .row .col-sm-4 {
     background:#343a40;
     min-height: 2500px;
     max-height: 8000px;
@@ -94,7 +97,7 @@
   .profile-container-bottom {
     background-color: #243a40;
     width: 100%;
-    height: 86%;
+    height: 85.6%;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 10px;
   }
